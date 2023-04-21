@@ -1,0 +1,15 @@
+framework that help build java applicaiton
+provides a large number of helper and annotaitons
+
+but it's hard to configure
+
+so we use SPRING BOOT
+-perform auto-configuration based on prop files (properties file, store configuration data or settings)
+     and JAR (zip files that include the project and the server) classpath
+-help to resolve dependency conflict
+-provide embeded http server
+
+spring boot applicaitons can be run in the command-line or from my IDE 
+
+Projects
+additional soring modules built on top of the core  Spring Framework
