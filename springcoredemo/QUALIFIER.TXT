@@ -1,0 +1,31 @@
+in case we have more than one bean that have the same constructor, we specify the one that we need 
+with the @Qualifier annotation
+
+setter and constructor have the same implementation
+
+
+PRIMARY
+using the @PRIMARY annotation there is no need to specify the Qualifier
+can be error if you have more primary annotation
+
+mixing primary and Qualifier
+qual>primary
+
+LAZY annotation
+A BEAN WILL BE INITIALIZED ONLY WHEN REQUESTED OR NEEDED FOR AN INJECTION
+add @LAzy for each class
+GLobal CONfiguration
+on applicaiton.properties file we wrote spring.main.lazy-annotation=true
+all beans will have the lazy annotation, but it's dangerous becuase it will create problem 
+
+BEAN SCOPES
+it refers to the life of the bean, how many instances are created, how is it shared
+
+spring container will create only one bean, that is cached in memory, and all dependency injections for that bean will refer
+to the same bean
+by default we have SIngleton, create a single shared instance of the bean
+Prototype, create a new instance for each injection, use @Scope(CONfigurableBeanFActory.SCOPE_PROTOTYPE), new instance is
+created for each injection
+
+
+
