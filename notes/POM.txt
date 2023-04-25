@@ -1,0 +1,8 @@
+Project object model file
+configuration fule for your project, it contains all the repo that we will use in Maven
+
+it have trhee different part:
+-project meta data, contains the name of the project version
+-dependencies, list of dependencies used (Spring, Hibernate, ..)
+-plug in, additional custom tasks to run, like unit test reports, ecc.
+

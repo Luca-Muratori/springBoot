@@ -1,0 +1,7 @@
+mysql database server is the main engine of the database
+store the data for the database
+support crud features on the data
+
+mysql workbench is a client gui for interacting with the database
+execute sql querues to retrieve data, etc.
+

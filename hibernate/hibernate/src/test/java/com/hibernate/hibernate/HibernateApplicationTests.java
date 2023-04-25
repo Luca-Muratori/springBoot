@@ -1,13 +1,13 @@
-package com.firstapp.demo.firstapp;
+package com.hibernate.hibernate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FirstappApplicationTests {
+class HibernateApplicationTests {
 
-	// @Test
-	// void contextLoads() {
-	// }
+	@Test
+	void contextLoads() {
+	}
 
 }

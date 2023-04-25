@@ -1,1 +1,10 @@
 tool that help the dev by downloading the jar files that we need
+
+how it works?
+-MAven read the config file for the JAR files that I put in there
+-check in my local repo if I already have them, if not it will download them from remote repo and save them
+-then will build and run them
+
+MVNW file
+allows the dev to run the Maven project, without have install MAven in the pc
+to use it wrote the commande ./mvnw clean compile test

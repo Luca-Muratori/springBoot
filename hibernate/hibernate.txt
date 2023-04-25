@@ -1,0 +1,12 @@
+framework for persisting saving java object in a database
+
+handles all of low level sql, minimize the amount of jdbc code you have to write
+
+provides Object-to-relational mapping ORM (bridge between object oriented programming and
+relational database)
+
+JPA
+standard API for ORM
+defines a set of interfaces and require an implementation to be usable
+
+the app talk with the jpa/hibernate, that use jdbc for all database comunication

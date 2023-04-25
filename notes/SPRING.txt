@@ -13,3 +13,6 @@ spring boot applicaitons can be run in the command-line or from my IDE
 
 Projects
 additional soring modules built on top of the core  Spring Framework
+
+Beans
+regular java class managed by Spring
