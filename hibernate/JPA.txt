@@ -1,0 +1,16 @@
+dev process-to do list
+1-annotate java class
+2-develop java code to perform database operations
+
+
+jpa hibernate=jpa
+because HIbernate is used by default
+
+entity class=java clas mapped to a database table
+
+DAO-Data Access Object
+it's the class repsonsible for interfacing with the database
+
+entity manager
+used to create and remove persistent entity instances, to find instances by id, and to query
+over instances
