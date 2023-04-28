@@ -10,3 +10,8 @@ standard API for ORM
 defines a set of interfaces and require an implementation to be usable
 
 the app talk with the jpa/hibernate, that use jdbc for all database comunication
+
+CREATING TABLE
+add in applicaiton.properties file this command spring.jpa.hibernate.ddl-auto=create
+and by running tha app jpa/hibernate will automatically drop(delete all the content in the table) the tables 
+then create them, based on the java code that it's specify in the java code

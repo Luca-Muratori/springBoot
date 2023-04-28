@@ -21,13 +21,46 @@ public class HibernateApplication {
 	CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return runner ->{
 			//createStudent(studentDAO);
-			//createMultipleStudent(studentDAO);
+			createMultipleStudent(studentDAO);
 			//readStudent(studentDAO);
 			//queryForStudent(studentDAO);
-			queryForFirstName(studentDAO);
+			//queryForFirstName(studentDAO);
+			//updateStudent(studentDAO);
+			//deleteStudent(studentDAO);
+			//deleteAll(studentDAO);
 		};
 	}
 
+	private void deleteAll(StudentDAO studentDAO) {
+		System.out.println("deleting all student ");
+		int itemsDeleted=studentDAO.deleteAll();
+		System.out.println("Items deleted, n°:" + itemsDeleted);
+	}
+
+	private void deleteStudent(StudentDAO studentDAO) {
+		//retrieve student by id
+		int studentId=3;
+		System.out.println("getting student by id " + studentId);
+		//deleting student
+		System.out.println("deleting student");
+		studentDAO.delete(studentId);
+	}
+
+	private void updateStudent(StudentDAO studentDAO) {
+		//retrieve student by id
+		int studentId=1;
+		System.out.println("gETTING STUDENT BY ID " + studentId);
+		Student myStudent=studentDAO.findById(studentId);
+		//change first name to 'scooby'
+		System.out.println("changing the first name...");
+		myStudent.setFirstName("SCOOBY");
+		//update the student
+		studentDAO.update(myStudent);
+		//display the updated student
+		System.out.println("updated student: " + myStudent);
+
+	}
+	
 	private void queryForFirstName(StudentDAO studentDAO) {
 		List<Student> students = studentDAO.findByFirstname("pop");
 		for(Student student : students){
@@ -44,6 +77,7 @@ public class HibernateApplication {
 
 		//display list of students
 	}
+	
 	private void readStudent(StudentDAO studentDAO) {
 		System.out.println("creating a new student...");
 		Student tempStudent1=new Student("mark", "DOE", "DOE@IT");
